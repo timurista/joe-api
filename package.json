@@ -5,7 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "start": "node index.ts",
-    "dev": "NODE_ENV=dev node index.ts"
+    "dev": "NODE_ENV=dev node index.ts",
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +23,10 @@
     "koa-router": "^10.1.1",
     "web3": "^1.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^27.4.4",
+    "supertest": "^6.1.6"
+  },
   "lint-staged": {
     "*.ts": "prettier --write",
     "*.js": "prettier --write",
